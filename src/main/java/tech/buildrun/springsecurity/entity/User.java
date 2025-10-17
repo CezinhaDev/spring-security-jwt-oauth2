@@ -65,4 +65,21 @@ public class User {
         this.roles = roles;
     }
 
+    public enum Values {
+        BASIC(2L),
+        ADMIN(1L);
+
+        Long roleId;
+
+        Values(Long roleId) {
+            this.roleId = roleId;
+        }
+
+        public Long getRoleId() {
+            return roleId;
+        }
+
+        
+    }
+
 }
